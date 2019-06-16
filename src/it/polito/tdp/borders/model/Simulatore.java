@@ -50,8 +50,7 @@ public class Simulatore {
 		
 		while((e=queue.poll())!=null) {
 			//eseguo l'evento
-			this.N_MIGRANTI = e.getT();
-			
+			this.T = e.getT();
 			int nPersone = e.getN();
 			Country stato = e.getStato();
 			List<Country> confinanti = Graphs.neighborListOf(this.grafo, stato);

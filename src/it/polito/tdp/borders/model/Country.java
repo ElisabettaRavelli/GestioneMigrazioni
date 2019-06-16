@@ -108,7 +108,7 @@ public class Country implements Comparable<Country>{
 	 */
 	@Override
 	public String toString() {
-		return String.format("[%s=%s]", stateAbb, stateName);
+		return String.format(stateName);
 	}
 
 	@Override
